@@ -1,0 +1,43 @@
+{
+	"@metadata": {
+		"authors": [
+			"Asyntai"
+		]
+	},
+	"asyntai-desc": "Puts the Asyntai AI chat assistant on every page and sends the wiki pages to the Asyntai knowledge base, so the assistant answers from them",
+	"asyntaichatbot": "Asyntai AI Chatbot",
+	"right-asyntai-manage": "Manage the Asyntai AI Chatbot settings",
+	"action-asyntai-manage": "manage the Asyntai AI Chatbot settings",
+	"asyntai-intro": "Paste your Widget ID and the chat assistant appears on every page. Add an API key and turn the sync on, and the assistant answers from the pages of this wiki. Get both at [https://asyntai.com asyntai.com].",
+	"asyntai-widget": "Chat widget",
+	"asyntai-sync": "Knowledge base sync",
+	"asyntai-field-widget-id": "Widget ID",
+	"asyntai-field-widget-id-help": "From the Asyntai dashboard, under Installation. It looks like asyntai_xxxxxxxxxxxx. You can paste the whole script snippet as well.",
+	"asyntai-field-widget-id-invalid": "That is not a Widget ID. It looks like asyntai_xxxxxxxxxxxx.",
+	"asyntai-field-api-key": "Asyntai API key",
+	"asyntai-field-api-key-help": "From the Asyntai dashboard, under Settings, then API. The API needs a paid plan. Leave the field empty to keep the stored key.",
+	"asyntai-field-api-key-stored": "A key is stored.",
+	"asyntai-field-api-key-none": "No key is stored.",
+	"asyntai-field-sync-enabled": "Send wiki pages to Asyntai",
+	"asyntai-field-sync-enabled-help": "New and changed pages go to the knowledge base as they are saved. Deleted pages are removed from it.",
+	"asyntai-field-namespaces": "Namespaces to send",
+	"asyntai-field-namespaces-help": "Namespace numbers, separated by commas. 0 is the main namespace. Add 12 for Help, or 4 for Project pages.",
+	"asyntai-field-website-id": "Asyntai website ID",
+	"asyntai-field-website-id-help": "Only needed when your Asyntai account has more than one website. Leave it empty otherwise.",
+	"asyntai-save": "Save settings",
+	"asyntai-saved": "Settings saved.",
+	"asyntai-status-heading": "Sync status",
+	"asyntai-status-tracked": "Pages in the Asyntai knowledge base: $1",
+	"asyntai-status-queued": "Pages waiting in the job queue: $1",
+	"asyntai-status-last-sync": "Last page sent: $1",
+	"asyntai-status-never": "none yet",
+	"asyntai-status-last-error": "Last problem: $1",
+	"asyntai-sync-all": "Send all pages now",
+	"asyntai-sync-all-help": "Queues every page in the chosen namespaces. Pages that did not change since they were last sent are skipped. The jobs run in the background as visitors open pages, or at once with maintenance/runJobs.php.",
+	"asyntai-sync-all-queued": "Done. $1 pages are queued.",
+	"asyntai-sync-needs-key": "Save an API key and turn the sync on first.",
+	"asyntai-error-limit": "The Asyntai daily upload limit was reached. The sync continues tomorrow.",
+	"asyntai-error-auth": "Asyntai refused the API key (HTTP $1). Check the key and the plan.",
+	"asyntai-error-http": "Asyntai answered HTTP $1: $2",
+	"asyntai-error-network": "Asyntai could not be reached: $1"
+}

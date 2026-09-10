@@ -1,0 +1,43 @@
+{
+	"@metadata": {
+		"authors": [
+			"Asyntai"
+		]
+	},
+	"asyntai-desc": "{{desc|name=Asyntai Chatbot|url=https://www.mediawiki.org/wiki/Extension:AsyntaiChatbot}}",
+	"asyntaichatbot": "{{doc-special|AsyntaiChatbot}}",
+	"right-asyntai-manage": "{{doc-right|asyntai-manage}}",
+	"action-asyntai-manage": "{{doc-action|asyntai-manage}}",
+	"asyntai-intro": "Text at the top of the settings page.",
+	"asyntai-widget": "Heading of the widget settings.",
+	"asyntai-sync": "Heading of the knowledge base sync settings.",
+	"asyntai-field-widget-id": "Label of the Widget ID field.",
+	"asyntai-field-widget-id-help": "Help text under the Widget ID field.",
+	"asyntai-field-widget-id-invalid": "Error shown when the Widget ID has the wrong shape.",
+	"asyntai-field-api-key": "Label of the API key field.",
+	"asyntai-field-api-key-help": "Help text under the API key field.",
+	"asyntai-field-api-key-stored": "Shown next to the API key field when a key is stored.",
+	"asyntai-field-api-key-none": "Shown next to the API key field when no key is stored.",
+	"asyntai-field-sync-enabled": "Label of the checkbox that turns the sync on.",
+	"asyntai-field-sync-enabled-help": "Help text under the sync checkbox.",
+	"asyntai-field-namespaces": "Label of the namespaces field.",
+	"asyntai-field-namespaces-help": "Help text under the namespaces field.",
+	"asyntai-field-website-id": "Label of the website ID field.",
+	"asyntai-field-website-id-help": "Help text under the website ID field.",
+	"asyntai-save": "Label of the save button.",
+	"asyntai-saved": "Message shown after the settings were saved.",
+	"asyntai-status-heading": "Heading of the sync status box.",
+	"asyntai-status-tracked": "Status line. $1 is the number of pages.",
+	"asyntai-status-queued": "Status line. $1 is the number of queued jobs.",
+	"asyntai-status-last-sync": "Status line. $1 is a date and time, or {{msg-mw|asyntai-status-never}}.",
+	"asyntai-status-never": "Used in {{msg-mw|asyntai-status-last-sync}} when no page was sent yet.",
+	"asyntai-status-last-error": "Status line. $1 is an error message.",
+	"asyntai-sync-all": "Label of the button that queues every page.",
+	"asyntai-sync-all-help": "Help text under the button that queues every page.",
+	"asyntai-sync-all-queued": "Message shown after every page was queued. $1 is the number of pages.",
+	"asyntai-sync-needs-key": "Error shown when the sync is requested without an API key.",
+	"asyntai-error-limit": "Error stored when the Asyntai daily upload limit is reached.",
+	"asyntai-error-auth": "Error stored when the API key is refused. $1 is the HTTP status code.",
+	"asyntai-error-http": "Error stored on another HTTP error. $1 is the status code, $2 the response text.",
+	"asyntai-error-network": "Error stored when the request fails. $1 is the error text."
+}

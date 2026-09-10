@@ -1,0 +1,83 @@
+{
+	"name": "AsyntaiChatbot",
+	"version": "1.0.0",
+	"author": [
+		"[https://asyntai.com Asyntai]"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:AsyntaiChatbot",
+	"descriptionmsg": "asyntai-desc",
+	"license-name": "GPL-2.0-or-later",
+	"type": "other",
+	"requires": {
+		"MediaWiki": ">= 1.39.0"
+	},
+	"manifest_version": 2,
+	"AutoloadNamespaces": {
+		"MediaWiki\\Extension\\AsyntaiChatbot\\": "includes/"
+	},
+	"MessagesDirs": {
+		"AsyntaiChatbot": [
+			"i18n"
+		]
+	},
+	"ExtensionMessagesFiles": {
+		"AsyntaiChatbotAlias": "AsyntaiChatbot.alias.php"
+	},
+	"SpecialPages": {
+		"AsyntaiChatbot": {
+			"class": "MediaWiki\\Extension\\AsyntaiChatbot\\SpecialAsyntaiChatbot",
+			"services": [
+				"DBLoadBalancer",
+				"JobQueueGroup"
+			]
+		}
+	},
+	"AvailableRights": [
+		"asyntai-manage"
+	],
+	"GroupPermissions": {
+		"sysop": {
+			"asyntai-manage": true
+		}
+	},
+	"JobClasses": {
+		"asyntaiSyncPage": "MediaWiki\\Extension\\AsyntaiChatbot\\Jobs\\SyncPageJob",
+		"asyntaiSyncAll": "MediaWiki\\Extension\\AsyntaiChatbot\\Jobs\\SyncAllJob"
+	},
+	"HookHandlers": {
+		"main": {
+			"class": "MediaWiki\\Extension\\AsyntaiChatbot\\Hooks",
+			"services": [
+				"DBLoadBalancer",
+				"JobQueueGroup"
+			]
+		},
+		"schema": {
+			"class": "MediaWiki\\Extension\\AsyntaiChatbot\\SchemaHooks"
+		}
+	},
+	"Hooks": {
+		"BeforePageDisplay": "main",
+		"PageSaveComplete": "main",
+		"PageDeleteComplete": "main",
+		"LoadExtensionSchemaUpdates": "schema"
+	},
+	"config": {
+		"AsyntaiScriptUrl": {
+			"value": "https://widget.asyntai.com/static/js/chat-widget.js",
+			"description": "Address of the Asyntai widget script."
+		},
+		"AsyntaiApiBase": {
+			"value": "https://asyntai.com",
+			"description": "Base address of the Asyntai API."
+		},
+		"AsyntaiSyncMinChars": {
+			"value": 120,
+			"description": "Pages with less text than this are stubs and are not sent."
+		},
+		"AsyntaiSyncMaxChars": {
+			"value": 40000,
+			"description": "At most this many characters of one page are sent."
+		}
+	}
+}
